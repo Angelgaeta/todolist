@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>To Do List</title>
+     <link rel="stylesheet" href="/assets/style.css" />
+</head>
+
+<body>
+     <h1 style="text-align: center; margin-top: 100px">[✔] To do list</h1>
+
+     <div class="container" style="background-color: aliceblue; padding: 30px; border-radius: 20px">
+          <p>
+               <label for="nvl-tache">Ajouter une tâche</label><input id="nvl-tache" type="text"
+                    name="creer_tache" /><button>
+                    Ajouter
+               </button>
+          </p>
+
+          <h3>MA LISTE</h3>
+          <ul id="liste">
+               <li>
+                    <input type="checkbox" /><label>Appeler Afpa</label><input type="text" /><button
+                         class="edit">Editer</button><button class="delete">Supprimer</button>
+               </li>
+               <li class="editTache">
+                    <input type="checkbox" /><label>Entrer une tâche</label><input type="text"
+                         value="Entrer une tâche" /><button class="edit">
+                         Editer</button><button class="delete">Supprimer</button>
+               </li>
+          </ul>
+
+          <h3>EFFECTUÉES</h3>
+          <ul id="effectuer">
+               <li>
+                    <input type="checkbox" checked /><label>Une tache </label><input type="text" /><button
+                         class="edit">Editer</button><button class="delete">Supprimer</button>
+               </li>
+          </ul>
+     </div>
+
+     <script type="text/javascript" src="assets/app.js"></script>
+</body>
+
+</html>
